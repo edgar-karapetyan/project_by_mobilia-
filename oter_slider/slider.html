@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>slider</title>
+    <link rel="stylesheet" href="styles/slider.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="slider" data-slider="chiefslider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <!----------------------------- slider itemns ---------------------------->
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/1.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/2.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/3.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/4.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/5.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/6.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/7.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/8.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content"><img src="images/9.jpg"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!----------------------------- slider indicators ---------------------------->
+                <ol class="slider__indicators">
+                    <li data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <li data-slide-to="3"></li>
+                    <li data-slide-to="4"></li>
+                    <li data-slide-to="5"></li>
+                    <li data-slide-to="6"></li>
+                    <li data-slide-to="7"></li>
+                    <li data-slide-to="8"></li>
+                    <li data-slide-to="9"></li>
+                </ol>
+                <!-- ----------------------------------------------------------------------- -->
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+            <a href="../index.html" class="close">X</a>
+        </div>
+
+    </div>
+
+    <!-- loader -->
+    <div class="box">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!------------>
+
+    <script src="js/slider.js"></script>
+    <!-- slider control  -->
+    <script>
+        const $slider = document.querySelector('[data-slider="chiefslider"]');
+        const slider = new ChiefSlider($slider, {
+            loop: true,
+            autoplay: false,
+            interval: 6000,
+        });
+    </script>
+
+</body>
+
+</html>
